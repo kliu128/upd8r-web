@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="canonical" href="https://projectk.cf/upd8r/" />
+		<meta name="description" content="An update checker for the popular webcomic made by Andrew Hussie, Homestuck." />
+		
+		<meta name="application-name" content="upd8r" />
+		<meta name="msapplication-config" content="tiles/browserconfig.xml" />
+		
+		<title>ProjectK > MSPA.upd8r</title>
+		
+		<link rel="stylesheet" href="/css/console.css?v=6-009" />
+		<style type="text/css">
+		/*<![CDATA[*/
+			.mspa-style {
+				background-color: #EFEFEF;
+				border: 3px solid #C6C6C6;
+				color: black;
+				
+				font-family: Courier, 'Courier New', monospace;
+				font-weight: bold;
+				font-size: x-large;
+				
+				margin: 1em 0;
+				padding: 5px;
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
+				width: fit-content;
+			}
+			.mspa-style a {
+				color: black;
+			}
+		/*]]>*/
+		</style>
+		
+		<script defer="" type="text/javascript" src="es6-promise.min.js"></script>
+		<script defer="" type="text/javascript" src="fetch.js"></script>
+		<script defer="" type="text/javascript" src="upd8r.js?v=21"></script>
+	</head>
+	<body>
+<!--
+	An experiment in XHTML5. Quite interesting, and I must say,
+	I rather like it! It's quite nice, having to have well-formed
+	markup.
+-->
+		ProjectK [Version 1.2-XHTML5]<br />
+		(c) 2015 Kevin Inc. All rights reserved.
+		
+		<h1 class="heading--command-line">C:\> upd8r.exe</h1>
+		
+		<p>DESC: Checks every 10 seconds for a new Homestuck update.</p>
+		
+		<p>STATUS: <span id="upd8-status">Loading...</span></p>
+		
+		<div hidden="" class="show-on-upd8 mspa-style">
+			=> <a id="upd8-command" target="_blank"></a><br />
+			<span id="upd8-number-of-pages"></span>
+		</div>
+		
+		<button id="simulate-upd8">simul8 upd8</button>
+		<button hidden="" class="show-on-upd8" id="dismiss-upd8">dismiss upd8</button>
+		
+		<audio id="sound-player" preload="auto">
+			<source type="audio/mpeg" src="alert.mp3" />
+			<source type="audio/ogg"  src="alert.ogg" />
+			<source type="audio/wave" src="alert.wav" />
+		</audio>
+		
+		<p class="no-js">JavaScript is required for the upd8 checker! Please enable JavaScript in your browser.</p>
+	</body>
+</html>
